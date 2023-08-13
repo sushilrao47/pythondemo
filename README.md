@@ -1,2 +1,3 @@
 # pythondemo
-Python tutorial
+Python tutorial 
+This is for learning only.
