@@ -23,7 +23,7 @@ print("dkladjfalkdfjlkdsfj: ", b, type(b))
 a =34.4
 print("value of a ", a, type(a))
 print("")
-d
+
 a = input("Please input user value")
 print("value of a :",a , type(a))
 a = int(a)
