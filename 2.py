@@ -4,6 +4,9 @@
     # Purspose of this program
     # Addition of two number
     Step : first two value , 
+    a =34
+    b=45
+    34+45=
 '''
 import math
 a = float(input("Enter value first :"))
