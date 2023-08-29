@@ -1,0 +1,21 @@
+{
+  "clientName": "BMW",
+  "Product": "Bike",
+  "valueChain": {
+    "anim": {
+      "cost": 7576,
+      "label": "anim",
+      "childOf": "null",
+      "currency": "USD",
+      "emission": "66 tCO2"
+    },
+ 
+    "BMW Smart Car": {
+      "cost": 9776,
+      "label": "BMW Smart Car",
+      "childOf": null,
+      "currency": "USD",
+      "emission": "72 tCO2"
+    }
+  }
+}
