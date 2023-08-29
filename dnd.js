@@ -1,37 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 
-export default () => {
-  const onDragStart = (event, nodeType) => {
-    event.dataTransfer.setData("application/reactflow", nodeType);
-    event.dataTransfer.effectAllowed = "move";
-  };
+import DnDFlow from "./Dndflow";
+
+import "./styles.css";
+
+// const onElementClick = (event, element) => console.log("click", element);
+// const onLoad = (reactFlowInstance) =>
+// console.log("flow loaded:", reactFlowInstance);
+
+const App = () => {
+  // const [elements, setElements] = useState(initialElements);
+  // const onConnect = (params) => setElements((els) => addEdge(params, els));
+  // const onElementsRemove = (elementsToRemove) =>
+  // setElements((els) => removeElements(elementsToRemove, els));
 
   return (
-    <aside>
-      <div className="description">
-        You can drag these nodes to the pane on the right.
-      </div>
-      <div
-        className="dndnode input"
-        onDragStart={(event) => onDragStart(event, "input")}
-        draggable
-      >
-        Input Node
-      </div>
-      <div
-        className="dndnode"
-        onDragStart={(event) => onDragStart(event, "default")}
-        draggable
-      >
-        Default Node
-      </div>
-      <div
-        className="dndnode output"
-        onDragStart={(event) => onDragStart(event, "output")}
-        draggable
-      >
-        Output Node
-      </div>
-    </aside>
+    <div className="dndflow-wrapper">
+      <DnDFlow />
+    </div>
   );
 };
+
+export default App;
