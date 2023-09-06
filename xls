@@ -1,0 +1,2 @@
+=LEFT(MID(A1,4,FIND(".",A1)-4),LEN(MID(A1,4,FIND(".",A1)-4))-1)
+=MID(A1,FIND(".",A1)+1,FIND(".",A1,FIND(".",A1)+1)-FIND(".",A1)-1)
