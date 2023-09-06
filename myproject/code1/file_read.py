@@ -1,3 +1,17 @@
+# # file= open("C:\\Users\\shakt\\pythondemo\\pythondemo\\myproject\\code1\\myfile.txt","a")
+# #     # file.write("this is my string"+str(i)+"\n")
+# # file.close()
+# file= open("C:\\Users\\shakt\\pythondemo\\pythondemo\\myproject\\code1\\myfile.txt","r")
+
+# # print("File contnet:->", file.readline())
+
+# # print("File contnet:->", file.readline())
+# for i in file:
+#     print(i)
+# file.close()
+
+
+data = '''
 <!DOCTYPE html>
 <html>
 <head>
@@ -103,16 +117,13 @@ html {
 <body>
 
 <div class="header">
-  <h1>Chania</h1>
+  <h1>###########</h1>
 </div>
 
 <div class="row">
   <div class="col-3 col-s-3 menu">
     <ul>
-      <li>The Flight</li>
-      <li>The City</li>
-      <li>The Island</li>
-      <li>The Food</li>
+      !!!!!!!!!!!!!!!
     </ul>
   </div>
 
@@ -141,3 +152,27 @@ html {
 </html>
 
 
+
+'''
+header=[{"name":"Ram Pratap Singh", "headerlist":["A","B","C"]},
+       {"name":"Bhanu Boss","headerlist":["AAA","BB","CC"]}]
+for d in header:
+    print(data)
+    file= open("C:\\Users\\shakt\\pythondemo\\pythondemo\\myproject\\code1\\myhtmlgener"+d["name"]+".html","w")
+    data1 = data.replace("###########", d["name"])
+    st=""
+    for l in d["headerlist"]:
+        st=st+"<li>"+l+"</li>"
+    data1 = data.replace("!!!!!!!!!!!!!!!", st)
+
+    file.write(data1)
+    file.close()
+    
+# print(header['name'])
+# data = data.replace("###########", header["name"])
+# print("data", data)
+# for i in range(1,10):
+#     file= open("C:\\Users\\shakt\\pythondemo\\pythondemo\\myproject\\code1\\myhtmlgener"+str(i)+".html","a")
+#     data = data.replace("###########", header["name"])
+#     file.write(data)
+#     file.close()

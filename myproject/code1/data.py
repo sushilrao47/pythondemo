@@ -1,3 +1,4 @@
+data = '''
 <!DOCTYPE html>
 <html>
 <head>
@@ -103,16 +104,13 @@ html {
 <body>
 
 <div class="header">
-  <h1>Chania</h1>
+  <h1>###########</h1>
 </div>
 
 <div class="row">
   <div class="col-3 col-s-3 menu">
     <ul>
-      <li>The Flight</li>
-      <li>The City</li>
-      <li>The Island</li>
-      <li>The Food</li>
+      !!!!!!!!!!!!!!!
     </ul>
   </div>
 
@@ -141,3 +139,16 @@ html {
 </html>
 
 
+
+'''
+header=[{"name":"Ram Pratap Singh", "headerlist":["A","B","C"]},
+       {"name":"Bhanu Boss","headerlist":["AAA","BB","CC"]}]
+
+
+print(header)
+for data in header:
+    print("--->", data["name"], "\t headerlist :->",data["headerlist"])
+    st=""
+    for l in data["headerlist"]:
+        st += "<li>"+l+"</li>"
+    print(st)
